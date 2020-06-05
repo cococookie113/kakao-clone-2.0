@@ -1,8 +1,19 @@
 .status-bar {
+  width: 100%;
+  top: 0;
   display: flex;
+  padding-right: 36px;
   justify-content: space-between;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: #656565;
+  box-sizing: border-box;
+  position: fixed;
+  opacity: 0;
+  transition: 0.1s ease-in-out;
+}
+
+.status-bar:hover {
+  opacity: 1;
 }
 
 .status-bar i {
